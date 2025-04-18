@@ -8,39 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            padding: 20px;
             background-color: #f8f9fa;
-        }
-        h3 {
-            color: rgb(12, 35, 70);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        p {
-            
-            margin: 10px 0;
-        }
-        .main-card {
-            position: relative;
-            margin: 0 auto;
-            display: flex;
-            padding: 10px 10px;
-            justify-content: center;
-            width: 300px;
-            height: 200px;
-            border: 2px solid blue;
-        }
-        .title-wrapper{
-         
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="main-card">
-        <div class="title-wrapper">
-            <h3>Students:</h3>
-            <div>
-                <p>{{groups}}</p>
+    <div class="container py-5">
+        <div class="card shadow-sm mx-auto" style="max-width: 400px;">
+            <div class="card-body text-center">
+                <h3 class="card-title text-primary">Student Groups</h3>
+                <p class="card-text">{{ groups }}</p>
             </div>
         </div>
     </div>
